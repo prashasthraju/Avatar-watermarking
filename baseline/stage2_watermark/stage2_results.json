@@ -1,0 +1,297 @@
+{
+ "thresholds_bits_of_256": {
+  "binomial_FPR1e-3": 154,
+  "binomial_FPR1e-6": 167,
+  "binomial_FPR1e-9": 176,
+  "empirical_max_null_plus1": 153,
+  "n_null_decodes": 2100
+ },
+ "robustness": [
+  {
+   "attack": "none (delivered CRF23)",
+   "n_videos": 150,
+   "bit_acc_mean": 0.8939322916666667,
+   "bit_acc_p10": 0.828125,
+   "bit_acc_min": 0.8046875,
+   "null_bit_acc_mean": 0.5053645833333333,
+   "null_bit_acc_max": 0.5703125,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 1.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "H.264 CRF30",
+   "n_videos": 150,
+   "bit_acc_mean": 0.73921875,
+   "bit_acc_p10": 0.66796875,
+   "bit_acc_min": 0.61328125,
+   "null_bit_acc_mean": 0.4990364583333333,
+   "null_bit_acc_max": 0.57421875,
+   "TPR@FPR1e-6": 0.9533333333333334,
+   "TPR@FPR1e-9": 0.8066666666666666,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "H.264 CRF40",
+   "n_videos": 150,
+   "bit_acc_mean": 0.5502083333333333,
+   "bit_acc_p10": 0.503515625,
+   "bit_acc_min": 0.4765625,
+   "null_bit_acc_mean": 0.5015885416666667,
+   "null_bit_acc_max": 0.578125,
+   "TPR@FPR1e-6": 0.006666666666666667,
+   "TPR@FPR1e-9": 0.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "H.265 CRF28",
+   "n_videos": 150,
+   "bit_acc_mean": 0.778125,
+   "bit_acc_p10": 0.71484375,
+   "bit_acc_min": 0.6796875,
+   "null_bit_acc_mean": 0.5061979166666667,
+   "null_bit_acc_max": 0.5625,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 0.9933333333333333,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "resize 0.5x",
+   "n_videos": 150,
+   "bit_acc_mean": 0.7317708333333334,
+   "bit_acc_p10": 0.663671875,
+   "bit_acc_min": 0.62109375,
+   "null_bit_acc_mean": 0.5007552083333333,
+   "null_bit_acc_max": 0.56640625,
+   "TPR@FPR1e-6": 0.92,
+   "TPR@FPR1e-9": 0.7133333333333334,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "center crop 80%",
+   "n_videos": 150,
+   "bit_acc_mean": 0.7630208333333334,
+   "bit_acc_p10": 0.671484375,
+   "bit_acc_min": 0.60546875,
+   "null_bit_acc_mean": 0.48908854166666665,
+   "null_bit_acc_max": 0.5546875,
+   "TPR@FPR1e-6": 0.9733333333333334,
+   "TPR@FPR1e-9": 0.8533333333333334,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "gaussian noise s=0.05",
+   "n_videos": 150,
+   "bit_acc_mean": 0.7857552083333333,
+   "bit_acc_p10": 0.73046875,
+   "bit_acc_min": 0.68359375,
+   "null_bit_acc_mean": 0.49028645833333334,
+   "null_bit_acc_max": 0.55859375,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 0.9933333333333333,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "gaussian noise s=0.15",
+   "n_videos": 150,
+   "bit_acc_mean": 0.6072395833333334,
+   "bit_acc_p10": 0.56640625,
+   "bit_acc_min": 0.515625,
+   "null_bit_acc_mean": 0.5021614583333334,
+   "null_bit_acc_max": 0.58203125,
+   "TPR@FPR1e-6": 0.08,
+   "TPR@FPR1e-9": 0.013333333333333334,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "brightness +0.2",
+   "n_videos": 150,
+   "bit_acc_mean": 0.846953125,
+   "bit_acc_p10": 0.7734375,
+   "bit_acc_min": 0.73828125,
+   "null_bit_acc_mean": 0.5102604166666667,
+   "null_bit_acc_max": 0.58203125,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 1.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "drop 50% frames",
+   "n_videos": 150,
+   "bit_acc_mean": 0.8415625,
+   "bit_acc_p10": 0.765625,
+   "bit_acc_min": 0.734375,
+   "null_bit_acc_mean": 0.5008333333333334,
+   "null_bit_acc_max": 0.55078125,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 1.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 40.306666666666665
+  },
+  {
+   "attack": "shuffle frames",
+   "n_videos": 150,
+   "bit_acc_mean": 0.8290885416666667,
+   "bit_acc_p10": 0.74609375,
+   "bit_acc_min": 0.7109375,
+   "null_bit_acc_mean": 0.5065104166666666,
+   "null_bit_acc_max": 0.58203125,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 1.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  },
+  {
+   "attack": "keep first 25% frames",
+   "n_videos": 150,
+   "bit_acc_mean": 0.8368489583333333,
+   "bit_acc_p10": 0.765234375,
+   "bit_acc_min": 0.72265625,
+   "null_bit_acc_mean": 0.5002083333333334,
+   "null_bit_acc_max": 0.5546875,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 1.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 19.42
+  },
+  {
+   "attack": "fps 29->15",
+   "n_videos": 150,
+   "bit_acc_mean": 0.85625,
+   "bit_acc_p10": 0.78125,
+   "bit_acc_min": 0.7578125,
+   "null_bit_acc_mean": 0.5007291666666667,
+   "null_bit_acc_max": 0.5703125,
+   "TPR@FPR1e-6": 1.0,
+   "TPR@FPR1e-9": 1.0,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 42.513333333333335
+  },
+  {
+   "attack": "crop80+bright+CRF30",
+   "n_videos": 150,
+   "bit_acc_mean": 0.6158072916666667,
+   "bit_acc_p10": 0.50390625,
+   "bit_acc_min": 0.453125,
+   "null_bit_acc_mean": 0.4983854166666667,
+   "null_bit_acc_max": 0.59375,
+   "TPR@FPR1e-6": 0.32,
+   "TPR@FPR1e-9": 0.28,
+   "FPR_obs@1e-6thr": 0.0,
+   "exact_256bit_recovery": 0.0,
+   "frames_after_mean": 79.14666666666666
+  }
+ ],
+ "imperceptibility": {
+  "psnr_wm_raw": {
+   "mean": 50.40282938024787,
+   "std": 0.9457170920231731,
+   "min": 49.04613430864388
+  },
+  "ssim_wm_raw": {
+   "mean": 0.9967706456232247,
+   "std": 0.0009304432994447644,
+   "min": 0.9954001904244737
+  },
+  "psnr_wm_vs_ctrl": {
+   "mean": 43.42371664974751,
+   "std": 0.7443148515589609,
+   "min": 41.87571349542529
+  },
+  "ssim_wm_vs_ctrl": {
+   "mean": 0.9828348032904187,
+   "std": 0.0023280296678282264,
+   "min": 0.978293886359067
+  },
+  "lpips_wm_vs_ctrl": {
+   "mean": 0.0046418453117596835,
+   "std": 0.0006630559689929405,
+   "min": 0.0032368823885917664
+  },
+  "psnr_ctrl_vs_orig": {
+   "mean": 41.87275376906359,
+   "std": 0.28428628693064567,
+   "min": 41.18553363307506
+  },
+  "psnr_wm_vs_orig": {
+   "mean": 41.392709752638964,
+   "std": 0.3440990946266371,
+   "min": 40.68116471049027
+  },
+  "n_videos": 648
+ },
+ "temporal": [
+  {
+   "tamper": "none",
+   "n": 100,
+   "flagged_rate": 0.73,
+   "order_ok_rate": 0.98,
+   "complete_rate": 0.44,
+   "mean_foreign_frames": 3.48,
+   "frame_assign_acc": 0.9310633270923709,
+   "mean_conf": 0.7573171573916077
+  },
+  {
+   "tamper": "drop one segment",
+   "n": 100,
+   "flagged_rate": 1.0,
+   "order_ok_rate": 0.89,
+   "complete_rate": 0.0,
+   "mean_foreign_frames": 19.17,
+   "frame_assign_acc": 0.7694793502387631,
+   "mean_conf": 0.696565589259068
+  },
+  {
+   "tamper": "swap two segments",
+   "n": 100,
+   "flagged_rate": 1.0,
+   "order_ok_rate": 0.34,
+   "complete_rate": 0.08,
+   "mean_foreign_frames": 24.29,
+   "frame_assign_acc": 0.8323748207074538,
+   "mean_conf": 0.6878437433589926
+  },
+  {
+   "tamper": "insert foreign segment",
+   "n": 100,
+   "flagged_rate": 1.0,
+   "order_ok_rate": 0.96,
+   "complete_rate": 0.05,
+   "mean_foreign_frames": 39.84,
+   "frame_assign_acc": 0.7929557110492534,
+   "mean_conf": 0.6898199139231707
+  },
+  {
+   "tamper": "shuffle frames",
+   "n": 100,
+   "flagged_rate": 1.0,
+   "order_ok_rate": 0.24,
+   "complete_rate": 0.01,
+   "mean_foreign_frames": 47.22,
+   "frame_assign_acc": 0.4956052305227402,
+   "mean_conf": 0.634608966437019
+  }
+ ]
+}

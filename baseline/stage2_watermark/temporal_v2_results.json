@@ -1,0 +1,72 @@
+{
+ "params": {
+  "w": 8,
+  "thr_f": 0.58,
+  "r": 4,
+  "L": 12,
+  "exempt_last": true
+ },
+ "budget_met_on_calib": false,
+ "fa_budget_calib": 0.02,
+ "n_calib": 50,
+ "n_test": 100,
+ "calib_flag_rates": {
+  "drop_segment": 0.98,
+  "insert_foreign": 0.84,
+  "none": 0.02,
+  "none_reencode": 0.3,
+  "shuffle_frames": 1.0,
+  "swap_segments": 0.92
+ },
+ "test": [
+  {
+   "case": "none",
+   "n": 100,
+   "flagged": 0.0,
+   "ORDER": 0.0,
+   "MISSING": 0.0,
+   "FOREIGN": 0.0
+  },
+  {
+   "case": "none_reencode",
+   "n": 100,
+   "flagged": 0.3,
+   "ORDER": 0.21,
+   "MISSING": 0.18,
+   "FOREIGN": 0.01
+  },
+  {
+   "case": "drop_segment",
+   "n": 100,
+   "flagged": 0.98,
+   "ORDER": 0.21,
+   "MISSING": 0.98,
+   "FOREIGN": 0.0
+  },
+  {
+   "case": "swap_segments",
+   "n": 100,
+   "flagged": 0.88,
+   "ORDER": 0.85,
+   "MISSING": 0.15,
+   "FOREIGN": 0.01
+  },
+  {
+   "case": "insert_foreign",
+   "n": 100,
+   "flagged": 0.9,
+   "ORDER": 0.24,
+   "MISSING": 0.2,
+   "FOREIGN": 0.8
+  },
+  {
+   "case": "shuffle_frames",
+   "n": 100,
+   "flagged": 1.0,
+   "ORDER": 0.98,
+   "MISSING": 0.86,
+   "FOREIGN": 0.05
+  }
+ ],
+ "last_segment_partial_frac_test": 0.96
+}

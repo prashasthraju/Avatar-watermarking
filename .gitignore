@@ -1,0 +1,42 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv*/
+venv/
+env/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# ---- Model checkpoints ----
+*.pt
+*.pth
+*.ckpt
+baseline/ckpts/
+
+# ---- Videos, landmarks and per-sample arrays ----
+*.mp4
+*.avi
+*.npy
+*.npz
+baseline/videos/
+baseline/stage3_interaction/landmarks/
+baseline/stage2_watermark/temporal_v2/
+
+# ---- Large per-pair score dumps / regenerable subsets ----
+# Summary CSVs, *_results.json, ROC plots and RESULTS.md stay tracked.
+**/evals/**/scores.csv
+baseline/subset/pairs_subset.csv
+
+# ---- Logs ----
+*.log
+baseline/logs/
+
+# ---- Claude Code local state ----
+.claude/settings.local.json
+.claude/worktrees/

@@ -1,0 +1,563 @@
+{
+ "stage1_biometric": {
+  "graph_CREMA-D_trainLIVE_testGAGA": {
+   "n_pairs": 226777,
+   "n_genuine": 77307,
+   "n_impostor": 149470,
+   "AUC": 0.8375912385177997,
+   "EER": 0.23989100677837183,
+   "EER_threshold": 0.97750175,
+   "TAR@FAR=1e-1": 0.5647354055906968,
+   "TAR@FAR=1e-2": 0.20209036697841076,
+   "TAR@FAR=1e-3": 0.06289210550144231,
+   "AUC_95CI": [
+    0.8301286987179863,
+    0.8475411500054225
+   ],
+   "paper_AUC_%": 76.5
+  },
+  "graph_CREMA-D_trainLIVE_testHUNY": {
+   "n_pairs": 226777,
+   "n_genuine": 77307,
+   "n_impostor": 149470,
+   "AUC": 0.8085636090107019,
+   "EER": 0.26758063705690716,
+   "EER_threshold": 0.9880743,
+   "TAR@FAR=1e-1": 0.48425110274619376,
+   "TAR@FAR=1e-2": 0.1539446621910047,
+   "TAR@FAR=1e-3": 0.04548100430750126,
+   "AUC_95CI": [
+    0.7983066618564743,
+    0.8192564251914021
+   ],
+   "paper_AUC_%": 73.9
+  },
+  "graph_CREMA-D_trainLIVE_testLIVE": {
+   "n_pairs": 160545,
+   "n_genuine": 55809,
+   "n_impostor": 104736,
+   "AUC": 0.9228429939850881,
+   "EER": 0.16047779557614167,
+   "EER_threshold": 0.9650235,
+   "TAR@FAR=1e-1": 0.7594474009568349,
+   "TAR@FAR=1e-2": 0.37248472468598254,
+   "TAR@FAR=1e-3": 0.15449121109498468,
+   "AUC_95CI": [
+    0.91653354977573,
+    0.9281201284732484
+   ],
+   "paper_AUC_%": 90.8
+  },
+  "graph_RAVDESS_trainLIVE_testLIVE": {
+   "n_pairs": 79200,
+   "n_genuine": 28800,
+   "n_impostor": 50400,
+   "AUC": 0.7574511315724206,
+   "EER": 0.3055555555555556,
+   "EER_threshold": 0.96265703,
+   "TAR@FAR=1e-1": 0.42243055555555553,
+   "TAR@FAR=1e-2": 0.12868055555555555,
+   "TAR@FAR=1e-3": 0.04079861111111111,
+   "AUC_95CI": [
+    0.7386104675829832,
+    0.7772206714821699
+   ],
+   "paper_AUC_%": 76.5
+  }
+ },
+ "stage2_watermark": {
+  "thresholds_bits_of_256": {
+   "binomial_FPR1e-3": 154,
+   "binomial_FPR1e-6": 167,
+   "binomial_FPR1e-9": 176,
+   "empirical_max_null_plus1": 153,
+   "n_null_decodes": 2100
+  },
+  "robustness": [
+   {
+    "attack": "none (delivered CRF23)",
+    "n_videos": 150,
+    "bit_acc_mean": 0.8939322916666667,
+    "bit_acc_p10": 0.828125,
+    "bit_acc_min": 0.8046875,
+    "null_bit_acc_mean": 0.5053645833333333,
+    "null_bit_acc_max": 0.5703125,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 1.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "H.264 CRF30",
+    "n_videos": 150,
+    "bit_acc_mean": 0.73921875,
+    "bit_acc_p10": 0.66796875,
+    "bit_acc_min": 0.61328125,
+    "null_bit_acc_mean": 0.4990364583333333,
+    "null_bit_acc_max": 0.57421875,
+    "TPR@FPR1e-6": 0.9533333333333334,
+    "TPR@FPR1e-9": 0.8066666666666666,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "H.264 CRF40",
+    "n_videos": 150,
+    "bit_acc_mean": 0.5502083333333333,
+    "bit_acc_p10": 0.503515625,
+    "bit_acc_min": 0.4765625,
+    "null_bit_acc_mean": 0.5015885416666667,
+    "null_bit_acc_max": 0.578125,
+    "TPR@FPR1e-6": 0.006666666666666667,
+    "TPR@FPR1e-9": 0.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "H.265 CRF28",
+    "n_videos": 150,
+    "bit_acc_mean": 0.778125,
+    "bit_acc_p10": 0.71484375,
+    "bit_acc_min": 0.6796875,
+    "null_bit_acc_mean": 0.5061979166666667,
+    "null_bit_acc_max": 0.5625,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 0.9933333333333333,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "resize 0.5x",
+    "n_videos": 150,
+    "bit_acc_mean": 0.7317708333333334,
+    "bit_acc_p10": 0.663671875,
+    "bit_acc_min": 0.62109375,
+    "null_bit_acc_mean": 0.5007552083333333,
+    "null_bit_acc_max": 0.56640625,
+    "TPR@FPR1e-6": 0.92,
+    "TPR@FPR1e-9": 0.7133333333333334,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "center crop 80%",
+    "n_videos": 150,
+    "bit_acc_mean": 0.7630208333333334,
+    "bit_acc_p10": 0.671484375,
+    "bit_acc_min": 0.60546875,
+    "null_bit_acc_mean": 0.48908854166666665,
+    "null_bit_acc_max": 0.5546875,
+    "TPR@FPR1e-6": 0.9733333333333334,
+    "TPR@FPR1e-9": 0.8533333333333334,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "gaussian noise s=0.05",
+    "n_videos": 150,
+    "bit_acc_mean": 0.7857552083333333,
+    "bit_acc_p10": 0.73046875,
+    "bit_acc_min": 0.68359375,
+    "null_bit_acc_mean": 0.49028645833333334,
+    "null_bit_acc_max": 0.55859375,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 0.9933333333333333,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "gaussian noise s=0.15",
+    "n_videos": 150,
+    "bit_acc_mean": 0.6072395833333334,
+    "bit_acc_p10": 0.56640625,
+    "bit_acc_min": 0.515625,
+    "null_bit_acc_mean": 0.5021614583333334,
+    "null_bit_acc_max": 0.58203125,
+    "TPR@FPR1e-6": 0.08,
+    "TPR@FPR1e-9": 0.013333333333333334,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "brightness +0.2",
+    "n_videos": 150,
+    "bit_acc_mean": 0.846953125,
+    "bit_acc_p10": 0.7734375,
+    "bit_acc_min": 0.73828125,
+    "null_bit_acc_mean": 0.5102604166666667,
+    "null_bit_acc_max": 0.58203125,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 1.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "drop 50% frames",
+    "n_videos": 150,
+    "bit_acc_mean": 0.8415625,
+    "bit_acc_p10": 0.765625,
+    "bit_acc_min": 0.734375,
+    "null_bit_acc_mean": 0.5008333333333334,
+    "null_bit_acc_max": 0.55078125,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 1.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 40.306666666666665
+   },
+   {
+    "attack": "shuffle frames",
+    "n_videos": 150,
+    "bit_acc_mean": 0.8290885416666667,
+    "bit_acc_p10": 0.74609375,
+    "bit_acc_min": 0.7109375,
+    "null_bit_acc_mean": 0.5065104166666666,
+    "null_bit_acc_max": 0.58203125,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 1.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   },
+   {
+    "attack": "keep first 25% frames",
+    "n_videos": 150,
+    "bit_acc_mean": 0.8368489583333333,
+    "bit_acc_p10": 0.765234375,
+    "bit_acc_min": 0.72265625,
+    "null_bit_acc_mean": 0.5002083333333334,
+    "null_bit_acc_max": 0.5546875,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 1.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 19.42
+   },
+   {
+    "attack": "fps 29->15",
+    "n_videos": 150,
+    "bit_acc_mean": 0.85625,
+    "bit_acc_p10": 0.78125,
+    "bit_acc_min": 0.7578125,
+    "null_bit_acc_mean": 0.5007291666666667,
+    "null_bit_acc_max": 0.5703125,
+    "TPR@FPR1e-6": 1.0,
+    "TPR@FPR1e-9": 1.0,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 42.513333333333335
+   },
+   {
+    "attack": "crop80+bright+CRF30",
+    "n_videos": 150,
+    "bit_acc_mean": 0.6158072916666667,
+    "bit_acc_p10": 0.50390625,
+    "bit_acc_min": 0.453125,
+    "null_bit_acc_mean": 0.4983854166666667,
+    "null_bit_acc_max": 0.59375,
+    "TPR@FPR1e-6": 0.32,
+    "TPR@FPR1e-9": 0.28,
+    "FPR_obs@1e-6thr": 0.0,
+    "exact_256bit_recovery": 0.0,
+    "frames_after_mean": 79.14666666666666
+   }
+  ],
+  "imperceptibility": {
+   "psnr_wm_raw": {
+    "mean": 50.40282938024787,
+    "std": 0.9457170920231731,
+    "min": 49.04613430864388
+   },
+   "ssim_wm_raw": {
+    "mean": 0.9967706456232247,
+    "std": 0.0009304432994447644,
+    "min": 0.9954001904244737
+   },
+   "psnr_wm_vs_ctrl": {
+    "mean": 43.42371664974751,
+    "std": 0.7443148515589609,
+    "min": 41.87571349542529
+   },
+   "ssim_wm_vs_ctrl": {
+    "mean": 0.9828348032904187,
+    "std": 0.0023280296678282264,
+    "min": 0.978293886359067
+   },
+   "lpips_wm_vs_ctrl": {
+    "mean": 0.0046418453117596835,
+    "std": 0.0006630559689929405,
+    "min": 0.0032368823885917664
+   },
+   "psnr_ctrl_vs_orig": {
+    "mean": 41.87275376906359,
+    "std": 0.28428628693064567,
+    "min": 41.18553363307506
+   },
+   "psnr_wm_vs_orig": {
+    "mean": 41.392709752638964,
+    "std": 0.3440990946266371,
+    "min": 40.68116471049027
+   },
+   "n_videos": 648
+  },
+  "temporal": [
+   {
+    "tamper": "none",
+    "n": 100,
+    "flagged_rate": 0.73,
+    "order_ok_rate": 0.98,
+    "complete_rate": 0.44,
+    "mean_foreign_frames": 3.48,
+    "frame_assign_acc": 0.9310633270923709,
+    "mean_conf": 0.7573171573916077
+   },
+   {
+    "tamper": "drop one segment",
+    "n": 100,
+    "flagged_rate": 1.0,
+    "order_ok_rate": 0.89,
+    "complete_rate": 0.0,
+    "mean_foreign_frames": 19.17,
+    "frame_assign_acc": 0.7694793502387631,
+    "mean_conf": 0.696565589259068
+   },
+   {
+    "tamper": "swap two segments",
+    "n": 100,
+    "flagged_rate": 1.0,
+    "order_ok_rate": 0.34,
+    "complete_rate": 0.08,
+    "mean_foreign_frames": 24.29,
+    "frame_assign_acc": 0.8323748207074538,
+    "mean_conf": 0.6878437433589926
+   },
+   {
+    "tamper": "insert foreign segment",
+    "n": 100,
+    "flagged_rate": 1.0,
+    "order_ok_rate": 0.96,
+    "complete_rate": 0.05,
+    "mean_foreign_frames": 39.84,
+    "frame_assign_acc": 0.7929557110492534,
+    "mean_conf": 0.6898199139231707
+   },
+   {
+    "tamper": "shuffle frames",
+    "n": 100,
+    "flagged_rate": 1.0,
+    "order_ok_rate": 0.24,
+    "complete_rate": 0.01,
+    "mean_foreign_frames": 47.22,
+    "frame_assign_acc": 0.4956052305227402,
+    "mean_conf": 0.634608966437019
+   }
+  ]
+ },
+ "stage2b_temporal_v2": {
+  "params": {
+   "w": 8,
+   "thr_f": 0.58,
+   "r": 4,
+   "L": 12,
+   "exempt_last": true
+  },
+  "budget_met_on_calib": false,
+  "fa_budget_calib": 0.02,
+  "n_calib": 50,
+  "n_test": 100,
+  "calib_flag_rates": {
+   "drop_segment": 0.98,
+   "insert_foreign": 0.84,
+   "none": 0.02,
+   "none_reencode": 0.3,
+   "shuffle_frames": 1.0,
+   "swap_segments": 0.92
+  },
+  "test": [
+   {
+    "case": "none",
+    "n": 100,
+    "flagged": 0.0,
+    "ORDER": 0.0,
+    "MISSING": 0.0,
+    "FOREIGN": 0.0
+   },
+   {
+    "case": "none_reencode",
+    "n": 100,
+    "flagged": 0.3,
+    "ORDER": 0.21,
+    "MISSING": 0.18,
+    "FOREIGN": 0.01
+   },
+   {
+    "case": "drop_segment",
+    "n": 100,
+    "flagged": 0.98,
+    "ORDER": 0.21,
+    "MISSING": 0.98,
+    "FOREIGN": 0.0
+   },
+   {
+    "case": "swap_segments",
+    "n": 100,
+    "flagged": 0.88,
+    "ORDER": 0.85,
+    "MISSING": 0.15,
+    "FOREIGN": 0.01
+   },
+   {
+    "case": "insert_foreign",
+    "n": 100,
+    "flagged": 0.9,
+    "ORDER": 0.24,
+    "MISSING": 0.2,
+    "FOREIGN": 0.8
+   },
+   {
+    "case": "shuffle_frames",
+    "n": 100,
+    "flagged": 1.0,
+    "ORDER": 0.98,
+    "MISSING": 0.86,
+    "FOREIGN": 0.05
+   }
+  ],
+  "last_segment_partial_frac_test": 0.96
+ },
+ "stage3_interaction": {
+  "n_pairs_common": 26759,
+  "per_condition": {
+   "a_released": {
+    "n_pairs": 26759,
+    "n_genuine": 9830,
+    "n_impostor": 16929,
+    "AUC": 0.9004494205258068,
+    "EER": 0.18283638320225207,
+    "EER_threshold": 0.96818876,
+    "TAR@FAR=1e-1": 0.7035605289928789,
+    "TAR@FAR=1e-2": 0.2871820956256358,
+    "TAR@FAR=1e-3": 0.09552390640895218
+   },
+   "b_reextract": {
+    "n_pairs": 26759,
+    "n_genuine": 9830,
+    "n_impostor": 16929,
+    "AUC": 0.9015882982526447,
+    "EER": 0.18280684808499764,
+    "EER_threshold": 0.9685814,
+    "TAR@FAR=1e-1": 0.708443540183113,
+    "TAR@FAR=1e-2": 0.2837232960325534,
+    "TAR@FAR=1e-3": 0.09755849440488301
+   },
+   "c_ctrl": {
+    "n_pairs": 26759,
+    "n_genuine": 9830,
+    "n_impostor": 16929,
+    "AUC": 0.8976404115398601,
+    "EER": 0.18626569575151608,
+    "EER_threshold": 0.96855444,
+    "TAR@FAR=1e-1": 0.6929806714140386,
+    "TAR@FAR=1e-2": 0.2853509664292981,
+    "TAR@FAR=1e-3": 0.09877924720244151
+   },
+   "d_wm": {
+    "n_pairs": 26759,
+    "n_genuine": 9830,
+    "n_impostor": 16929,
+    "AUC": 0.9000100773940256,
+    "EER": 0.18472660666981666,
+    "EER_threshold": 0.96887356,
+    "TAR@FAR=1e-1": 0.7001017293997965,
+    "TAR@FAR=1e-2": 0.296236012207528,
+    "TAR@FAR=1e-3": 0.10081383519837232
+   }
+  },
+  "deltas": {
+   "watermark effect (d_wm - c_ctrl)": {
+    "dAUC": 0.002369665854165537,
+    "dAUC_95CI": [
+     0.000773882404692583,
+     0.0038851422020440424
+    ],
+    "dEER": -0.0015390890816994185,
+    "dEER_95CI": [
+     -0.004514115667764848,
+     0.0006691383076270287
+    ],
+    "score_pearson_r": 0.9984385119978384,
+    "mean_abs_score_change": 0.0017033019570985464,
+    "decision_flip_rate_at_ref_EER_thr": 0.01816211368137823
+   },
+   "re-encode effect (c_ctrl - b_reextract)": {
+    "dAUC": -0.003947886712784676,
+    "dAUC_95CI": [
+     -0.005561754127925547,
+     -0.0024033154984205306
+    ],
+    "dEER": 0.0034588476665184387,
+    "dEER_95CI": [
+     0.0009178126407837807,
+     0.005682932905684471
+    ],
+    "score_pearson_r": 0.9984185599915901,
+    "mean_abs_score_change": 0.001685730214880975,
+    "decision_flip_rate_at_ref_EER_thr": 0.01700362494861542
+   },
+   "mediapipe drift (b_reextract - a_released)": {
+    "dAUC": 0.0011388777268379613,
+    "dAUC_95CI": [
+     0.00017359507144905085,
+     0.002069860684677868
+    ],
+    "dEER": -2.953511725442559e-05,
+    "dEER_95CI": [
+     -0.0023291639560034444,
+     0.0014396926235697766
+    ],
+    "score_pearson_r": 0.9994496342914319,
+    "mean_abs_score_change": 0.0010089489409170751,
+    "decision_flip_rate_at_ref_EER_thr": 0.009043686236406443
+   },
+   "total vs released (d_wm - a_released)": {
+    "dAUC": -0.000439343131781178,
+    "dAUC_95CI": [
+     -0.002387718611621231,
+     0.0011706434533744257
+    ],
+    "dEER": 0.0018902234675645946,
+    "dEER_95CI": [
+     -0.001727943367108204,
+     0.003601332521429424
+    ],
+    "score_pearson_r": 0.9978588655177475,
+    "mean_abs_score_change": 0.0020097817848200605,
+    "decision_flip_rate_at_ref_EER_thr": 0.020404349938338503
+   }
+  }
+ },
+ "subset": {
+  "targets": [
+   "C1003",
+   "C1061",
+   "C1072"
+  ],
+  "n_pairs": 46656,
+  "n_genuine": 15552,
+  "n_impostor": 31104
+ },
+ "notes": {
+  "stage2_watermark.temporal": "superseded v1 run (no re-encoded clean control); use stage2b_temporal_v2",
+  "stage1_paper_AUC": "from AVAPrintDB README (CREMA-D graph; RAVDESS LIVE intra = 76.5). Our cross-generator AUCs are ~7 pts above paper; unexplained.",
+  "stage2b": "simulation: offline verifier, demo key, K and video_id given out of band"
+ }
+}
